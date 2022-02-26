@@ -1,3 +1,5 @@
+"use strict";
+
 // AFFICHE LE PROFIL DES PHOTOGRAPHES (index)
 function photographerFactory(data) {
     const { name, portrait, city, country, tagline, price , id } = data;

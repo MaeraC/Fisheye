@@ -1,3 +1,5 @@
+"use strict";
+
 function getSortFactory() {
     
     const main                              = document.querySelector("#main");

@@ -1,3 +1,5 @@
+"use strict";
+
 function lightboxFactory(data) {
     const { image , video, title } = data;
 

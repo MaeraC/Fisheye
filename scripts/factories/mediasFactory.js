@@ -1,3 +1,5 @@
+"use strict";
+
 // AFFICHE LES MEDIAS DU PHOTOGRAPHE
 function mediasFactory(data) {
     const { image, video, title, likes } = data;

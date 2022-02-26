@@ -1,3 +1,5 @@
+"use strict";
+
 // AFFICHE LE PROFIL DES PHOTOGRAPHES (Page photographer/Header)
 function profileFactory(data) {
     const { name, portrait, city, country, tagline, price } = data;

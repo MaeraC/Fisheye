@@ -1,3 +1,5 @@
+"use strict";
+
 let pictures = [];
 
     // RECUPERATION DES DONNEES DES PHOTOGRAPHES

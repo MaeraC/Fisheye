@@ -1,3 +1,5 @@
+"use strict";
+
 const contactTitle              = document.querySelector(".contact-title");
 const label                     = document.querySelectorAll("label");
 const myInputs                  = document.querySelectorAll(".input-form");

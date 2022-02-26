@@ -1,3 +1,5 @@
+"use strict";
+
 function totalLikesFactory() { 
 
     const allLikes = document.querySelectorAll(".numberOfLikes");
