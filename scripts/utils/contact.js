@@ -180,4 +180,13 @@ form.addEventListener("submit", (e) => {
         }
 });
 
+// Envoie des données du formulaire dans la console 
+submitBtn.addEventListener("click", () => {
+    console.log(inputLastname.value);
+    console.log(inputFirstname.value);
+    console.log(inputLastname.value);
+    console.log(inputEmail.value);
+    console.log(textarea.value);
+})
+
 
