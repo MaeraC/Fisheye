@@ -15,10 +15,12 @@ function likesCounter() {
             if (likeBtn.classList.contains("selected")) {
                 counter.value++;
                 totalCounter.value++;
+                likeBtn.style.color = "#D88876";
             }
             else {
                 counter.value--;
                 totalCounter.value--; 
+                likeBtn.style.color = "#901C1C";
             }
         })
     }
