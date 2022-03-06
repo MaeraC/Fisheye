@@ -1,4 +1,6 @@
-"use strict";
+// AFFICHE LA MODALE DE CONTACT DU PHOTOGRAPHE
+const contactHeader             = document.querySelector(".contact-header");
+
 
 const contactTitle              = document.querySelector(".contact-title");
 const label                     = document.querySelectorAll("label");
@@ -84,7 +86,9 @@ function contactFactory(data) {
             photographerName.style.textAlign    = "left";
             photographerName.style.marginBottom = "20px";
 
+        
         modal.appendChild(photographerName);
+
     };
 
     return { name, getContactCardDOM }
@@ -174,8 +178,6 @@ form.addEventListener("submit", (e) => {
         isTextareaValid) {
             form.reset();
         }
-
-        //test 
 });
 
 

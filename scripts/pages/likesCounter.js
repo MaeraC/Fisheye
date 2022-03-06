@@ -1,5 +1,3 @@
-"use strict";
-
 function likesCounter() {
 
     const buttonLike = document.querySelectorAll(".buttonHeart");
@@ -26,4 +24,3 @@ function likesCounter() {
     }
 };
 
-likesCounter(); 

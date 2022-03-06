@@ -1,5 +1,4 @@
-"use strict";
-
+// AFFICHE LA LIGHTBOX 
 function lightboxFactory(data) {
     const { image , video, title } = data;
 
@@ -17,7 +16,7 @@ function lightboxFactory(data) {
         previous.innerHTML          = '<i class="fas fa-chevron-left"></i>';
         previous.style.position     = "absolute";
         previous.style.top          = "47%";
-        previous.style.left         = "16%";
+        previous.style.left         = "16%"; 
         previous.style.fontSize     = "40px"; 
         previous.style.color        = "#901C1C";
         previous.style.cursor       = "pointer";
@@ -172,7 +171,7 @@ function lightboxFactory(data) {
                 });
 
                 closeLightbox();
-                  
+                   
             });
         };
         

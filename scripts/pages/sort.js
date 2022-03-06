@@ -1,5 +1,4 @@
-"use strict";
-
+// AFFICHE LA LISTE DE TRI PAR CATEGORIES 
 function getSortFactory() {
     
     const main                              = document.querySelector("#main");
@@ -98,17 +97,19 @@ function getSortFactory() {
         titleSort.style.display = "none";
     });
     
-    // Tri des medias par catégories 
+    // Tri des medias par ordre alphabetique 
     titleSort.addEventListener("click", () => {
         pictures = pictures.sort((a, b) => a.title.localeCompare(b.title));
 		buildGallery(pictures);
 	}); 
 
+    // Tri des medias par Date
     dateSort.addEventListener("click", () => {
         pictures = pictures.sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf());
         buildGallery(pictures);
     });
 
+    // Tri des medias par nombre de likes 
     popularity.addEventListener("click", () => {
         pictures = pictures.sort((a1, a2) => a2.likes - a1.likes);
         buildGallery(pictures);
