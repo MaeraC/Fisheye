@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 function getMedias() {
     fetch("data/photographers.json")
     .then((res) => res.json())
@@ -16,7 +17,7 @@ function getMedias() {
         buildGallery(pictures); 
         getSortFactory();
     })
-};
+}
 
 function buildGallery(pictures) {
             const photographMedias = document.querySelector(".photograph-medias");
@@ -30,6 +31,6 @@ function buildGallery(pictures) {
             });
 
             likesCounter(); 
-};
+}
 
 getMedias();

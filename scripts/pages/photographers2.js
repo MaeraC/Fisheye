@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 function getProfile() { 
     fetch("data/photographers.json")
     .then((res) => res.json())
@@ -11,10 +12,6 @@ function getProfile() {
             verifyUrl.has(photographer.id);
             let param = verifyUrl.get('id');
 
-            // Affiche la lightbox 
-            const lightboxModel = lightboxFactory(photographer);
-            lightboxModel.getLightboxDOM();
-
             if (photographer.id == param) {
                 // Affiche le profil du photographe
                 const photographerModel = profileFactory(photographer);
@@ -24,11 +21,13 @@ function getProfile() {
                 // Affiche le formulaire de contact du photographe
                 const contactModel = contactFactory(photographer);
                 contactModel.getContactCardDOM();
-            };
 
-            
+                // Affiche la lightbox 
+                const lightboxModel = lightboxFactory(photographer);
+                lightboxModel.getLightboxDOM();
+            }
         });
     })
-};
+}
 
 getProfile();
