@@ -11,11 +11,11 @@ function getMedias() {
         pictures = medias.filter(obj => obj.photographerId == photographerId);
 
         // Affiche le compteur total de likes
-        getTotalLikes(pictures); 
+        getTotalLikes(pictures);   
 
         // Affiche la gallerie d'images 
         buildGallery(pictures); 
-        getSortFactory();
+        getSortFactory();  
     })
 }
 

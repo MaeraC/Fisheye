@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
 // AFFICHE LA LISTE DE TRI PAR CATEGORIES 
 function getSortFactory() {
     
@@ -123,5 +125,5 @@ function getSortFactory() {
     popularityBloc.appendChild(arrowClose);
     sortList.appendChild(dateSort);
     sortList.appendChild(titleSort);
-};
+}
 

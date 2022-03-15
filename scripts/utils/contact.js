@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-cond-assign */
 // AFFICHE LA MODALE DE CONTACT DU PHOTOGRAPHE
 const contactHeader             = document.querySelector(".contact-header");
 
@@ -53,7 +55,7 @@ function displayModal() {
     submitBtn.focus();
     modal.setAttribute("aria-hidden", "false");
     main.setAttribute("aria-hidden", "true");
-};
+}
 
 // Fermeture de la modale 
 function closeModal() {
@@ -61,7 +63,7 @@ function closeModal() {
     main.style.filter           = "blur(0px)";
     modal.setAttribute("aria-hidden", "true");
     main.setAttribute("aria-hidden", "false");
-}; 
+}
 
 // Fermeture de la modale avec la touche Echap
 window.addEventListener("keydown", (e) => {
@@ -88,11 +90,10 @@ function contactFactory(data) {
 
         
         modal.appendChild(photographerName);
-
-    };
+    }
 
     return { name, getContactCardDOM }
-};
+}
 
 // Validation du formulaire 
 form.addEventListener("submit", (e) => {

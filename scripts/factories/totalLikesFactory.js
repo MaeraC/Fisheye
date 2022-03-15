@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
 function getTotalLikes(pictures) {
 
       const totalLikesContainer               = document.querySelector(".totalLikesContainer");
@@ -45,7 +47,7 @@ function getTotalLikes(pictures) {
           heart.style.lineHeight = "50px"; 
           heart.style.paddingRight = "10px";
       }
-};
+}
 
     
    

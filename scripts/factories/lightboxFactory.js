@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-cond-assign */
 // AFFICHE LA LIGHTBOX 
@@ -84,12 +85,12 @@ function lightboxFactory(data) {
         const medias = document.querySelectorAll(".galleryLink");
 
         for (let i = 0; i < medias.length; i++) {
-            const mediaLink = medias[i];
+            mediaLink = medias[i];
 
             mediaLink.addEventListener("click", (e) => {
                 e.preventDefault();
                 openLightbox();
-                const selectedMedia = medias[i].querySelector(".currentMedia");
+                selectedMedia = medias[i].querySelector(".currentMedia");
                 selectedMedia.classList.add("selected");
 
                 // Affiche le média sélectionné
@@ -118,7 +119,7 @@ function lightboxFactory(data) {
                         e.preventDefault();
                         selectedMedia.classList.remove("selected");
                         i--;
-                        const selectedMedia = medias[i].querySelector(".currentMedia");
+                        selectedMedia = medias[i].querySelector(".currentMedia");
                         selectedMedia.classList.add("selected");
                         displayMedia();
                     })
@@ -132,7 +133,7 @@ function lightboxFactory(data) {
                         e.preventDefault();
                         selectedMedia.classList.remove("selected");
                         i++;
-                        const selectedMedia = medias[i].querySelector(".currentMedia");
+                        selectedMedia = medias[i].querySelector(".currentMedia");
                         displayMedia();
                     })
                 }
@@ -159,7 +160,7 @@ function lightboxFactory(data) {
                     if (lightbox.style.display = "block" && keyCode === 37) {
                         selectedMedia.classList.remove("selected");
                         i--;
-                        const selectedMedia = medias[i].querySelector(".currentMedia");
+                        selectedMedia = medias[i].querySelector(".currentMedia");
                         selectedMedia.classList.add("selected");
                         displayMedia();
                     }
@@ -167,7 +168,7 @@ function lightboxFactory(data) {
                     if (lightbox.style.display = "block" && keyCode === 39) {
                         selectedMedia.classList.remove("selected");
                         i++;
-                        const selectedMedia = medias[i].querySelector(".currentMedia");
+                        selectedMedia = medias[i].querySelector(".currentMedia");
                         displayMedia();
                     }
                 });

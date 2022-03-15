@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // AFFICHE LES PHOTOGRAPHES DANS LA PAGE INDEX
 function photographerFactory(data) {
     const { name, portrait, city, country, tagline, price , id } = data;

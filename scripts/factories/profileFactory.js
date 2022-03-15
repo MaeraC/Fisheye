@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // AFFICHE LE PROFIL DES PHOTOGRAPHES DANS LA PAGE PHOTOGRAPHERS
 function profileFactory(data) {
     const { name, portrait, city, country, tagline, price } = data;

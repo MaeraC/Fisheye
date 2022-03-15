@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 function likesCounter() {
 
     const buttonLike = document.querySelectorAll(".buttonHeart");
@@ -24,5 +25,5 @@ function likesCounter() {
             }
         })
     }
-};
+}
 
