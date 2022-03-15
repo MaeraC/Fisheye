@@ -16,7 +16,7 @@ function lightboxFactory(data) {
         const vid                   = document.createElement("video");
         const titleMedia            = document.createElement("p");
 
-        previous.innerHTML          = '<i class="fas fa-chevron-left"></i>';
+        previous.innerHTML          = '<i class="fas fa-chevron-left" title="image précédente"></i>';
         previous.style.position     = "absolute";
         previous.style.top          = "47%";
         previous.style.left         = "16%"; 
@@ -26,7 +26,7 @@ function lightboxFactory(data) {
         previous.classList.add      = "previous";
         previous.setAttribute("title", "Image précédente");
 
-        next.innerHTML              = '<i class="fas fa-chevron-right"></i>';
+        next.innerHTML              = '<i class="fas fa-chevron-right" title="image suivante"></i>';
         next.style.position         = "absolute";
         next.style.top              = "47%"; 
         next.style.right            = "16%";  
@@ -36,14 +36,13 @@ function lightboxFactory(data) {
         next.classList.add          = "next"; 
         next.setAttribute("title", "Image suivante");
 
-        closeBtn.innerHTML          = '<i class="fas fa-times"></i>';
+        closeBtn.innerHTML          = '<i class="fas fa-times" title="Fermer la lightbox"></i>';
         closeBtn.style.position     = "absolute";
         closeBtn.style.top          = "6%";
         closeBtn.style.right        = "16%";
         closeBtn.style.fontSize     = "40px";
         closeBtn.style.color        = "#901C1C";
         closeBtn.style.cursor       = "pointer";
-        closeBtn.setAttribute("title", "Fermer la lightbox");
       
         container.classList.add("container"); 
         container.style.width       = "55%";

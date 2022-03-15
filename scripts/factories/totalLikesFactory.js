@@ -22,7 +22,7 @@ function getTotalLikes(pictures) {
       totalLikes.style.background             = "#D88876";
       totalLikes.style.paddingLeft            = "20px";
 
-      heart.innerHTML                         = '<i class="fas fa-heart"></i>';
+      heart.innerHTML                         = '<i class="fas fa-heart" title="Likes total"></i>';
       heart.style.fontSize                    = "24px";
 
       totalLikesContainer.appendChild(totalLikes);

@@ -11,7 +11,7 @@ function getSortFactory() {
     const sortList                          = document.createElement("ul");
     const popularityBloc                    = document.createElement("li");
     const popularity                        = document.createElement("p");
-    const arrowClose                        = document.createElement("button");
+    const arrowClose                        = document.createElement("i");
     const dateSort                          = document.createElement("li");
     const titleSort                         = document.createElement("li");
 
@@ -39,7 +39,6 @@ function getSortFactory() {
 
     sortList.style.listStyle                = "none";
 
-    popularityBloc.textContent              = "Popularité";
     popularityBloc.style.fontSize           = "18px";
     popularityBloc.style.height             = "50px";
     popularityBloc.style.width              = "170px";
@@ -54,8 +53,9 @@ function getSortFactory() {
     popularity.style.width                  = "95%";
     popularity.style.position               = "absolute";
     popularity.style.top                    = "0";
+    popularity.textContent                  = "Popularité";
     
-    arrowClose.innerHTML                    = '<i class="fas fa-chevron-down"></i>';
+    arrowClose.classList.add("fas", "fa-chevron-down");
     arrowClose.style.position               = "absolute";
     arrowClose.style.top                    = "15px";
     arrowClose.style.right                  = "10px"; 
@@ -64,6 +64,7 @@ function getSortFactory() {
     arrowClose.style.fontSize               = "18px";
     arrowClose.style.color                  = "white";
     arrowClose.style.cursor                 = "pointer";
+    arrowClose.setAttribute("aria-hidden", "true");
 
     dateSort.textContent                    = "Date";
     dateSort.style.fontSize                 = "18px";

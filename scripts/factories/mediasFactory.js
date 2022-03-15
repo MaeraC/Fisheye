@@ -49,16 +49,14 @@ function mediasFactory(data) {
         numberOfLikes.style.fontSize        = "20px";
         
         buttonHeart.classList.add("buttonHeart");
-        buttonHeart.innerHTML               = '<i class="fas fa-heart"></i>';
+        buttonHeart.innerHTML               = '<i class="fas fa-heart" title="Likes"></i>';
         buttonHeart.style.background        = "white";
         buttonHeart.style.border            = "none";
         buttonHeart.style.fontSize          = "20px";
         buttonHeart.style.color             = "#901C1C";
         buttonHeart.style.cursor            = "pointer";
-        buttonHeart.setAttribute("title", "Likes");
 
         figure.appendChild(mediaLink);
-       
         figure.appendChild(mediaCaption);
         mediaCaption.appendChild(mediaTitle);
         mediaCaption.appendChild(mediaLikes);
