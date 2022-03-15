@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-cond-assign */
 // AFFICHE LA LIGHTBOX 
 function lightboxFactory(data) {
     const { image , video, title } = data;
@@ -77,17 +79,17 @@ function lightboxFactory(data) {
             lightbox.style.display = "block";
             lightbox.setAttribute("aria-hidden", "false");
             main.setAttribute("aria-hidden", "true");
-        };
+        }
 
         const medias = document.querySelectorAll(".galleryLink");
 
         for (let i = 0; i < medias.length; i++) {
-            mediaLink = medias[i];
+            const mediaLink = medias[i];
 
             mediaLink.addEventListener("click", (e) => {
                 e.preventDefault();
                 openLightbox();
-                selectedMedia = medias[i].querySelector(".currentMedia");
+                const selectedMedia = medias[i].querySelector(".currentMedia");
                 selectedMedia.classList.add("selected");
 
                 // Affiche le média sélectionné
@@ -106,7 +108,7 @@ function lightboxFactory(data) {
                     else {
                         vid.replaceWith(img);
                     }
-                };
+                }
 
                 displayMedia();
 
@@ -116,11 +118,11 @@ function lightboxFactory(data) {
                         e.preventDefault();
                         selectedMedia.classList.remove("selected");
                         i--;
-                        selectedMedia = medias[i].querySelector(".currentMedia");
+                        const selectedMedia = medias[i].querySelector(".currentMedia");
                         selectedMedia.classList.add("selected");
                         displayMedia();
                     })
-                };
+                }
 
                 previousMedia();
                 
@@ -130,10 +132,10 @@ function lightboxFactory(data) {
                         e.preventDefault();
                         selectedMedia.classList.remove("selected");
                         i++;
-                        selectedMedia = medias[i].querySelector(".currentMedia");
+                        const selectedMedia = medias[i].querySelector(".currentMedia");
                         displayMedia();
                     })
-                };
+                }
 
                 nextMedia();
 
@@ -144,7 +146,7 @@ function lightboxFactory(data) {
                         lightbox.setAttribute("aria-hidden", "true");
                         main.setAttribute("aria-hidden", "false");
                     })
-                };
+                }
 
                 // Accessibilité Lightbox
                 window.addEventListener("keydown", (e) => {
@@ -152,20 +154,20 @@ function lightboxFactory(data) {
                 
                     if (lightbox.style.display = "block" && keyCode === 27) {
                         lightbox.style.display = "none";
-                    };
+                    }
 
                     if (lightbox.style.display = "block" && keyCode === 37) {
                         selectedMedia.classList.remove("selected");
                         i--;
-                        selectedMedia = medias[i].querySelector(".currentMedia");
+                        const selectedMedia = medias[i].querySelector(".currentMedia");
                         selectedMedia.classList.add("selected");
                         displayMedia();
-                    };
+                    }
 
                     if (lightbox.style.display = "block" && keyCode === 39) {
                         selectedMedia.classList.remove("selected");
                         i++;
-                        selectedMedia = medias[i].querySelector(".currentMedia");
+                        const selectedMedia = medias[i].querySelector(".currentMedia");
                         displayMedia();
                     }
                 });
@@ -173,7 +175,7 @@ function lightboxFactory(data) {
                 closeLightbox();
                    
             });
-        };
+        }
         
         lightbox.appendChild(container);
         container.appendChild(img);
@@ -182,10 +184,10 @@ function lightboxFactory(data) {
         lightbox.appendChild(previous);
         lightbox.appendChild(next);
         lightbox.appendChild(closeBtn);     
-    };   
+    }
 
     return { image, video, title, getLightboxDOM };
-};
+}
 
 
 
